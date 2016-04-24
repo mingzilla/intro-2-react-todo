@@ -1,0 +1,19 @@
+syntax: glob
+
+# IntelliJ files
+*.iws
+.idea/
+output/
+
+# Other files
+Thumbs.db
+
+# Node
+node_modules/
+.tmp
+bower_components/
+*.log
+
+# Sass output
+.sass-cache/
+**/resource-out/
