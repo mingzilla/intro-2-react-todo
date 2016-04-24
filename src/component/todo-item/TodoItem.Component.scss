@@ -1,0 +1,7 @@
+@import "../../common/base/bem-mixin";
+
+.todo-item {
+  @include m(is-done) {
+    text-decoration: line-through;
+  }
+}

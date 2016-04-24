@@ -5,6 +5,9 @@ syntax: glob
 .idea/
 output/
 
+# git
+.git/
+
 # Other files
 Thumbs.db
 

@@ -1,0 +1,35 @@
+/*
+// Usage
+.block {
+  @include e("element") {
+    // content for .block__element
+  }
+  @include m("modifier") {
+    // content for .block--modifier
+  }
+}
+*/
+
+@mixin element($name) {
+  &__#{$name} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  &--#{$name} {
+    @content;
+  }
+}
+
+@mixin e($name) {
+  @include element($name) {
+    @content;
+  }
+}
+
+@mixin m($name) {
+  @include modifier($name) {
+    @content;
+  }
+}
